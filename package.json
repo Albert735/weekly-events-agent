@@ -1,0 +1,30 @@
+{
+  "name": "weekly-events-agent",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Albert735/weekly-events-agent.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/Albert735/weekly-events-agent/issues"
+  },
+  "homepage": "https://github.com/Albert735/weekly-events-agent#readme",
+  "dependencies": {
+    "dotenv": "^18.0.3",
+    "openai": "^7.22.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.2",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
