@@ -8,7 +8,7 @@ async function main() {
 
   const result = await run(
     eventsAgent,
-    "What organizations are active in Accra?",
+    "What events are happening in Accra this week? Give me the details.",
   );
 
   console.log("Agent response:\n");
