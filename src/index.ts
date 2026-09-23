@@ -40,6 +40,22 @@ async function main() {
 
   console.log("Model output:");
   console.log(response.output);
+
+  for (const item of response.output) {
+    if (item.type === "function_call") {
+      console.log("Tool requested:", item.name);
+      console.log("Arguments:", item.arguments);
+
+      if (item.name === "get_current_week_events") {
+        const args = JSON.parse(item.arguments);
+
+        const result = getCurrentWeekEvents(args.location);
+
+        console.log("Tool result:");
+        console.log(result);
+      }
+    }
+  }
 }
 
 main().catch(console.error);
