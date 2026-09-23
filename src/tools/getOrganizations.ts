@@ -13,6 +13,9 @@ export const getOrganizations = tool({
   }),
 
   async execute({ location }) {
+    console.log(`Tool called: get_organizations`);
+    console.log(`Location: ${location}`);
+
     return [
       {
         name: "Accra Developers",

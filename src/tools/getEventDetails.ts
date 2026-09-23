@@ -14,6 +14,8 @@ export const getEventDetails = tool({
   }),
 
   async execute({ eventName }) {
+    console.log(`Tool called: get_event_details`);
+    console.log(`Event name: ${eventName}`);
     const events = {
       "Tech Meetup": {
         name: "Tech Meetup",

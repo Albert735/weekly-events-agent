@@ -11,6 +11,9 @@ export const getCurrentWeekEvents = tool({
   }),
 
   async execute({ location }) {
+    console.log(`Tool called: get_current_week_events`);
+    console.log(`Location: ${location}`);
+
     return [
       {
         name: "Tech Meetup",
