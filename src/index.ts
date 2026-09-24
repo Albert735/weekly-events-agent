@@ -3,6 +3,13 @@ import "dotenv/config";
 import { run } from "@openai/agents";
 import { eventsAgent } from "./agent.js";
 
+import { getCurrentWeekRange } from "./utils/week.js";
+
+const week = getCurrentWeekRange();
+
+console.log("Week starts:", week.start);
+console.log("Week ends:", week.end);
+
 async function main() {
   console.log("Starting Weekly Events Agent...\n");
 
